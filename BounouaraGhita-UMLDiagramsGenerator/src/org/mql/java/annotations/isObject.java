@@ -1,5 +1,5 @@
 
-package org.mql.java.annotation;
+package org.mql.java.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

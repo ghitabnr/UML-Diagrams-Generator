@@ -7,13 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.mql.java.models.Auteur;
-import org.mql.java.models.Etudiant;
 
-public class ClassExplorer {
+public class ClassesExplorer {
 	private int nbrMethods=0;
 	//private int nbrfields=0;
 	
-	public ClassExplorer() {
+	public ClassesExplorer() {
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -50,7 +49,7 @@ public class ClassExplorer {
 	}
 	public static void main(String[] args) {
 		Class<?> c = Auteur.class;
-		ClassExplorer e = new ClassExplorer();
+		ClassesExplorer e = new ClassesExplorer();
 		/*for (String s : e.GetMethods(c)) {	
 			System.out.println(s);
 		}*/

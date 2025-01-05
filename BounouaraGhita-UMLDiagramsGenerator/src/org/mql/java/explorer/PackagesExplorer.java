@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
-public class PackageExplorer extends ClassLoader{
+public class PackagesExplorer extends ClassLoader{
 
-	public PackageExplorer() {
+	public PackagesExplorer() {
 	
 	}
 	

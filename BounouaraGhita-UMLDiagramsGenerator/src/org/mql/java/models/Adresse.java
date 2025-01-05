@@ -1,19 +1,19 @@
 package org.mql.java.models;
 
 public class Adresse {
-	 private String rue;
-	    private String ville;
+	 private String neighborhood;
+	    private String city;
 
-	    public Adresse(String rue, String ville) {
-	        this.rue = rue;
-	        this.ville = ville;
+	    public Adresse(String neighborhood, String city) {
+	        this.neighborhood = neighborhood;
+	        this.city = city;
 	    }
 
-	    public String getRue() {
-	        return rue;
+	    public String getNeighborhood() {
+	        return neighborhood;
 	    }
 
-	    public String getVille() {
-	        return ville;
+	    public String getCity() {
+	        return city;
 	    }
 }
