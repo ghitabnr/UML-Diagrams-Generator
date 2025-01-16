@@ -11,9 +11,9 @@ public class Author {
     private String name;
     private String nationality;
     @Relation(type = "Aggregation")
-    private Adresse adresse; // Agrégation
+    private Adresse adresse;
     @Relation(type = "Composition")
-    private List<Book> books; // Composition: La durée de vie des livres est liée à la durée de vie de l'auteur
+    private List<Book> books; 
 
     public Author() {
     }

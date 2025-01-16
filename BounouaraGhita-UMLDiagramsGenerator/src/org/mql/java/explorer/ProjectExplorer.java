@@ -21,11 +21,11 @@ public class ProjectExplorer {
 	    File files[] = folder.listFiles();
 		if(folder.isDirectory() && folder.exists()) {
 			for (File file : files) {
-				packageNames.addAll(parserFolder(file,folder.getAbsolutePath()));//folder.getAbsolutePath()=C:\Users\pc\UML-Diagrams-Generator\BounouaraGhita-UMLDiagramsGenerator\bin
+				packageNames.addAll(parserFolder(file,folder.getAbsolutePath()));
 			} 
 		 }
 		else {
-	       System.out.println("The specified folder does not exist or is not a valid folder.");
+	       System.out.println("Dossier introuvable ou incorrect.");
 	    }
 
      		
@@ -51,13 +51,9 @@ public class ProjectExplorer {
 	
 
 	private String getPackageName(File Classpath,String binPath) {
-		//System.out.println(binPath);
-		//System.out.println(Classpath);
 		String absolutePath = Classpath.getAbsolutePath();	
-		//System.out.println(absolutePath);
 		String className =absolutePath.substring(0, absolutePath.length() - 6);
 		String relativePath = className.substring(binPath.length() + 1);
-		//System.out.println(relativePath);
         return removeLastElement(relativePath);
     }
 	
@@ -66,7 +62,6 @@ public class ProjectExplorer {
         
         if (lastSeparatorIndex != -1) {
         	String packageName = relativePath.substring(0, lastSeparatorIndex);
-        	//System.out.println(packageName);
         	return packageName.replace('\\', '.');
         } else {
             return relativePath.replace('\\', '.');
@@ -74,8 +69,4 @@ public class ProjectExplorer {
     }
 	
 	
-	/*public static void main(String[] args) {
-		ExplorerProject p =new ExplorerProject();
-		p.getPackageName(null, null);
-	}*/
 }

@@ -9,18 +9,16 @@ import java.util.List;
 import org.mql.java.models.Author;
 
 public class ClassesExplorer {
-	private int nbrMethods=0;
-	//private int nbrfields=0;
 	
 	public ClassesExplorer() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public String[][] getFields(Class<?> c) {
 	    Field[] fields = c.getDeclaredFields();
-	    int nbrfields = fields.length;
-	    String data[][] = new String[4][nbrfields];
-	    for (int i = 0; i < nbrfields; i++) {
+	    int n = fields.length;
+	    String data[][] = new String[4][n];
+	    for (int i = 0; i < n; i++) {
 	        Field f = fields[i];
 	        int modifiers = f.getModifiers();
 	        data[0][i] = Modifier.toString(modifiers);
@@ -34,10 +32,10 @@ public class ClassesExplorer {
 	}
 	public String[][] getMethods(Class<?> c) {
 	    Method[] methods = c.getDeclaredMethods();
-	    int nbrMethods = methods.length;
-	    String[][] data = new String[3][nbrMethods];
+	    int nm = methods.length;
+	    String[][] data = new String[3][nm];
 
-	    for (int i = 0; i < nbrMethods; i++) {
+	    for (int i = 0; i < nm; i++) {
 	        Method m = methods[i];
 	        int modifiers = m.getModifiers();
 	        data[0][i] = Modifier.toString(modifiers);
@@ -50,9 +48,6 @@ public class ClassesExplorer {
 	public static void main(String[] args) {
 		Class<?> c = Author.class;
 		ClassesExplorer e = new ClassesExplorer();
-		/*for (String s : e.GetMethods(c)) {	
-			System.out.println(s);
-		}*/
 		
 		 for (int i = 0; i < e.getFields(c).length; i++) {
 		        String modifier = e.getFields(c)[0][i];

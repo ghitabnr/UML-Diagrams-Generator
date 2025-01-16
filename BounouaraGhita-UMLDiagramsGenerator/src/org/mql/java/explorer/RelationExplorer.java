@@ -19,15 +19,15 @@ public class RelationExplorer {
 			 for (Field f : field) {
 				 Relation rel = f.getDeclaredAnnotation(Relation.class);
 				if(rel!=null) {
-	                System.out.println("\t"+rel.type()+"=============>"+c.getSimpleName() + " has a/an " + f.getType().getSimpleName() + " field: " + f.getName());
+	                System.out.println("\t"+rel.type()+"->"+c.getSimpleName() + " a un " + f.getType().getSimpleName() + " attribut: " + f.getName());
 				}
 			}
 			 parent = c.getSuperclass().getSimpleName();
 			 if(parent != null) {
-				 System.out.println("\t Héritage=============>"+parent + "  is a parent of : " + c.getSimpleName());
+				 System.out.println("\t Héritage ->"+parent + "  est un parent de : " + c.getSimpleName());
 			 }
 		} catch (Exception e) {
-			System.out.println("Error : "+ e.getMessage());
+			System.out.println("Erreur : "+ e.getMessage());
 		}
 		 
     }
