@@ -1,11 +1,11 @@
 package org.mql.java.models;
 
-import org.mql.java.annotations.isObject;
+import org.mql.java.annotations.Relation;
 
 public class Book {
 	private String title;
     private String isbn;
-    @isObject(type = "dependency")
+    @Relation(type = "dependency")
     private Author author;
 
     public Book(String title, String isbn) {

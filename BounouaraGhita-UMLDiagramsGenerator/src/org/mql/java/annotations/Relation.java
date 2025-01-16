@@ -10,8 +10,8 @@ import java.lang.annotation.Target;
 //To Check if a field is of type Object
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface isObject {
-	boolean isObj() default true;
+public @interface Relation {
+	boolean relation() default true;
 	String type() default "";
 
 }

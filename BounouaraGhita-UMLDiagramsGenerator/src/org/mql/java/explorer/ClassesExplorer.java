@@ -6,7 +6,7 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.mql.java.models.Auteur;
+import org.mql.java.models.Author;
 
 public class ClassesExplorer {
 	private int nbrMethods=0;
@@ -26,8 +26,8 @@ public class ClassesExplorer {
 	        data[0][i] = Modifier.toString(modifiers);
 	        data[1][i] = f.getType().getSimpleName();
 	        data[2][i] = f.getName();
-	        if(new ExplorerRelation().getRelation(f)!=null) {
-	        	data[3][i]=new ExplorerRelation().getRelation(f);
+	        if(new RelationExplorer().getRelation(f)!=null) {
+	        	data[3][i]=new RelationExplorer().getRelation(f);
 	        }
 	    }
 	return data;
@@ -48,7 +48,7 @@ public class ClassesExplorer {
         
 	}
 	public static void main(String[] args) {
-		Class<?> c = Auteur.class;
+		Class<?> c = Author.class;
 		ClassesExplorer e = new ClassesExplorer();
 		/*for (String s : e.GetMethods(c)) {	
 			System.out.println(s);

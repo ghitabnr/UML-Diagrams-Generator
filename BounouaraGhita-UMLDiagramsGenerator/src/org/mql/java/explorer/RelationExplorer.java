@@ -3,7 +3,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.mql.java.annotations.isObject;
+import org.mql.java.annotations.Relation;
 
 public class RelationExplorer {
 
@@ -17,9 +17,9 @@ public class RelationExplorer {
 			Class<?> c = Class.forName(qname);
 			Field field[] = c.getDeclaredFields();
 			 for (Field f : field) {
-				 isObject ob = f.getDeclaredAnnotation(isObject.class);
-				if(ob!=null) {
-	                System.out.println("\t"+ob.type()+"=============>"+c.getSimpleName() + " has a/an " + f.getType().getSimpleName() + " field: " + f.getName());
+				 Relation rel = f.getDeclaredAnnotation(Relation.class);
+				if(rel!=null) {
+	                System.out.println("\t"+rel.type()+"=============>"+c.getSimpleName() + " has a/an " + f.getType().getSimpleName() + " field: " + f.getName());
 				}
 			}
 			 parent = c.getSuperclass().getSimpleName();
@@ -33,9 +33,9 @@ public class RelationExplorer {
     }
 	public String  getRelation(Field f) {
 		String relationName=null;
-		 isObject ob = f.getDeclaredAnnotation(isObject.class);
-		 if(ob!=null) {
-			 relationName = ob.type();
+		 Relation rel = f.getDeclaredAnnotation(Relation.class);
+		 if(rel!=null) {
+			 relationName = rel.type();
 			}
 		return relationName;
 		 

@@ -4,15 +4,15 @@ import java.awt.print.Book;
 import java.util.List;
 
 import org.mql.java.annotations.Form;
-import org.mql.java.annotations.isObject;
+import org.mql.java.annotations.Relation;
 
 @Form
 public class Author {
     private String name;
     private String nationality;
-    @isObject(type = "Aggregation")
+    @Relation(type = "Aggregation")
     private Adresse adresse; // Agrégation
-    @isObject(type = "Composition")
+    @Relation(type = "Composition")
     private List<Book> books; // Composition: La durée de vie des livres est liée à la durée de vie de l'auteur
 
     public Author() {
