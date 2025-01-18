@@ -20,7 +20,7 @@ public class DataMemory {
     }
 
     public List<Class<?>> getClasses(String packageName, String classPath) {
-        return Packagesexplorer.scan(packageName, classPath);
+        return (List<Class<?>>) Packagesexplorer.scan(packageName, classPath);
     }
 
     public String[][] getFields(Class<?> classe) {

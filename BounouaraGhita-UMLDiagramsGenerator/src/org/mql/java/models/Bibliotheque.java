@@ -4,8 +4,11 @@ import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.mql.java.annotations.Relation;
+
 public class Bibliotheque implements Resource {
     private String name;
+    @Relation(type = "Composition")
     private List<Book> books;
 
     public Bibliotheque(String name) {

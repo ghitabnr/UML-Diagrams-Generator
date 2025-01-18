@@ -5,7 +5,7 @@ import org.mql.java.annotations.Relation;
 public class Book {
 	private String title;
     private String isbn;
-    @Relation(type = "dependency")
+    @Relation(type = "Aggregation")
     private Author author;
 
     public Book(String title, String isbn) {
@@ -22,7 +22,7 @@ public class Book {
     }
 
     public void Details() {
-    	author = new Author();
+    	author = new Author(null, null, null, 0, null);
         System.out.println("Auteur: " + author.getName() + " (" + author.getNationality() + ")");
     }
 }

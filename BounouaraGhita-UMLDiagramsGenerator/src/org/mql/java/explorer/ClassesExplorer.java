@@ -9,10 +9,22 @@ import java.util.List;
 import org.mql.java.models.Author;
 
 public class ClassesExplorer {
+	private Class<?> clazz;
+	String className;
 	
 	public ClassesExplorer() {
 		
 	}
+	public ClassesExplorer(Class<?> clazz) {
+        this.clazz = clazz;
+    }
+	public ClassesExplorer(String className) {
+		this.className = className;
+}
+	public String getName() {
+        return className;
+    }
+
 	
 	public String[][] getFields(Class<?> c) {
 	    Field[] fields = c.getDeclaredFields();

@@ -2,6 +2,10 @@ package org.mql.java.xml;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -11,6 +15,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.mql.java.annotations.Relation;
 import org.mql.java.explorer.ClassesExplorer;
 import org.mql.java.explorer.PackagesExplorer;
 import org.mql.java.explorer.ProjectExplorer;
@@ -20,15 +25,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class XMLGenerator {
-    static String path = "C:\\Users\\pc\\UML-Diagrams-Generator\\BounouaraGhita-UMLDiagramsGenerator";
-    static String classpath = "C:\\Users\\pc\\UML-Diagrams-Generator\\BounouaraGhita-UMLDiagramsGenerator\\bin";
+    static String path = "C:\\\\\\\\Users\\\\\\\\pc\\\\\\\\UML-Diagrams-Generator\\\\\\\\BounouaraGhita-UMLDiagramsGenerator";
+    static String classpath = "C:\\\\\\\\Users\\\\\\\\pc\\\\\\\\UML-Diagrams-Generator\\\\\\\\BounouaraGhita-UMLDiagramsGenerator\\\\\\\\bin";
 
     public static void main(String[] args) throws FileNotFoundException {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.newDocument();
-
             Element root = document.createElement("projet");
             document.appendChild(root);
 
@@ -119,6 +123,28 @@ public class XMLGenerator {
                             classe.setValue(iface);
                             relation.setAttributeNode(classe);
                             relation.setTextContent("implementation");
+                            relations.appendChild(relation);
+                        }
+                    }
+                    for (Field field : c.getDeclaredFields()) {
+                        if (field.isAnnotationPresent(Relation.class)) {
+                            Relation relationAnnotation = field.getAnnotation(Relation.class);
+                            String relationType = relationAnnotation.type(); 
+
+                            String relatedClass;
+                            if (field.getGenericType() instanceof ParameterizedType) {
+                                ParameterizedType genericType = (ParameterizedType) field.getGenericType();
+                                Type[] typeArguments = genericType.getActualTypeArguments();
+                                relatedClass = ((Class<?>) typeArguments[0]).getSimpleName();
+                            } else {
+                                relatedClass = field.getType().getSimpleName();
+                            }
+
+                            Element relation = document.createElement("relation");
+                            Attr classe = document.createAttribute("classe");
+                            classe.setValue(relatedClass);
+                            relation.setAttributeNode(classe);
+                            relation.setTextContent(relationType);
                             relations.appendChild(relation);
                         }
                     }

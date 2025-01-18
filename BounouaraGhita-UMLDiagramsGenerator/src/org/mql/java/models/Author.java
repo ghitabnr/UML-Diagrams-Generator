@@ -7,25 +7,34 @@ import org.mql.java.annotations.Form;
 import org.mql.java.annotations.Relation;
 
 @Form
-public class Author {
-    private String name;
+public class Author extends Personne{
+    public Author(String firstname, String nationalite, String lastname, int age, String cNE) {
+		super(firstname, nationalite, lastname, age, cNE);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String name;
     private String nationality;
     @Relation(type = "Aggregation")
     private Adresse adresse;
     @Relation(type = "Composition")
     private List<Book> books; 
 
-    public Author() {
-    }
+   
+    
 
-    public Author(String name, String nationality, Adresse adresse, List<Book> books) {
-        this.name = name;
-        this.nationality = nationality;
-        this.adresse = adresse;
-        this.books = books;
-    }
+	public Author(String firstname, String nationalite, String lastname, int age, String cNE, String name,
+			String nationality, Adresse adresse, List<Book> books) {
+		super(firstname, nationalite, lastname, age, cNE);
+		this.name = name;
+		this.nationality = nationality;
+		this.adresse = adresse;
+		this.books = books;
+	}
 
-    public String getName() {
+
+
+	public String getName() {
         return name;
     }
 

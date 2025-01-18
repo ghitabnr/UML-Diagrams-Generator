@@ -19,7 +19,9 @@ public class PackagesExplorer extends ClassLoader{
 		try {
 			ClassLoader currentClassLoader = Thread.currentThread().getContextClassLoader();
 			URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{new URL("file://" + classPath + "/")}, currentClassLoader);
-			String packageFolder = packageName.replace('.', '\\');
+
+				
+				String packageFolder = packageName.replace('.', '\\');
 
 		        File dir = new File(classPath + '\\' + packageFolder);
 		        File classes[] = dir.listFiles();
@@ -41,7 +43,7 @@ public class PackagesExplorer extends ClassLoader{
             Class<?> loadedClass = urlClassLoader.loadClass(className);
             classe = loadedClass;
         } catch (ClassNotFoundException e) {
-            System.out.println("Classe introuvable : " + className);
+            System.out.println("Classe non trouvée : " + className);
         }
 		
 		return classe;

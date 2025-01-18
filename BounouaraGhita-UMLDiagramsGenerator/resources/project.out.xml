@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI" xmlns:uml="http://www.omg.org/spec/UML">
+<xmi:Documentation exporterVersion="1.0" exporter="XSLT Transformation"/>
+<uml:Model name="" xmi:id="model">
+<uml:Package name="" xmi:id="N10004">
+<uml:Class name="" xmi:id="N10006">
+<uml:Property type="" visibility="private" name="" xmi:id="N10009"/>
+<uml:Property type="" visibility="" name="" xmi:id="N1000D"/>
+<uml:Operation visibility="public" name="" xmi:id="N10012">
+<uml:Parameter type="" name="return" xmi:id="N10012-return"/>
+</uml:Operation>
+<uml:Operation visibility="public static" name="" xmi:id="N10016">
+<uml:Parameter type="" name="return" xmi:id="N10016-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1001A">
+<uml:Parameter type="" name="return" xmi:id="N1001A-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1001E">
+<uml:Parameter type="" name="return" xmi:id="N1001E-return"/>
+</uml:Operation>
+<uml:Generalization specific="ClassesExplorer" general="" xmi:id="N10023"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N10026">
+<uml:Property type="" visibility="private" name="" xmi:id="N10029"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N1002D"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10031"/>
+<uml:Operation visibility="public static" name="" xmi:id="N10036">
+<uml:Parameter type="" name="return" xmi:id="N10036-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1003A">
+<uml:Parameter type="" name="return" xmi:id="N1003A-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1003E">
+<uml:Parameter type="" name="return" xmi:id="N1003E-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10042">
+<uml:Parameter type="" name="return" xmi:id="N10042-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10046">
+<uml:Parameter type="" name="return" xmi:id="N10046-return"/>
+</uml:Operation>
+<uml:Generalization specific="DataMemory" general="" xmi:id="N1004B"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N1004E">
+<uml:Operation visibility="public" name="" xmi:id="N10051">
+<uml:Parameter type="" name="return" xmi:id="N10051-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10055">
+<uml:Parameter type="" name="return" xmi:id="N10055-return"/>
+</uml:Operation>
+<uml:Generalization specific="PackagesExplorer" general="" xmi:id="N1005A"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N1005D">
+<uml:Property type="" visibility="private" name="" xmi:id="N10060"/>
+<uml:Operation visibility="public" name="" xmi:id="N10065">
+<uml:Parameter type="" name="return" xmi:id="N10065-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10069">
+<uml:Parameter type="" name="return" xmi:id="N10069-return"/>
+</uml:Operation>
+<uml:Operation visibility="private static" name="" xmi:id="N1006D">
+<uml:Parameter type="" name="return" xmi:id="N1006D-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N10071">
+<uml:Parameter type="" name="return" xmi:id="N10071-return"/>
+</uml:Operation>
+<uml:Generalization specific="ProjectExplorer" general="" xmi:id="N10076"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N10079">
+<uml:Operation visibility="public" name="" xmi:id="N1007C">
+<uml:Parameter type="" name="return" xmi:id="N1007C-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10080">
+<uml:Parameter type="" name="return" xmi:id="N10080-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10084">
+<uml:Parameter type="" name="return" xmi:id="N10084-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10088">
+<uml:Parameter type="" name="return" xmi:id="N10088-return"/>
+</uml:Operation>
+<uml:Generalization specific="RelationExplorer" general="" xmi:id="N1008D"/>
+</uml:Class>
+</uml:Package>
+<uml:Package name="" xmi:id="N10090">
+<uml:Class name="" xmi:id="N10092">
+<uml:Property type="" visibility="private" name="" xmi:id="N10095"/>
+<uml:Property type="" visibility="final" name="" xmi:id="N10099"/>
+<uml:Operation visibility="public" name="" xmi:id="N1009E">
+<uml:Parameter type="" name="return" xmi:id="N1009E-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N100A2">
+<uml:Parameter type="" name="return" xmi:id="N100A2-return"/>
+</uml:Operation>
+<uml:Generalization specific="" general="" xmi:id="N100A7"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N100AA">
+<uml:Property type="" visibility="private static final" name="" xmi:id="N100AD"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N100B1"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N100B5"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N100B9"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N100BD"/>
+<uml:Operation visibility="private" name="" xmi:id="N100C2">
+<uml:Parameter type="" name="return" xmi:id="N100C2-return"/>
+</uml:Operation>
+<uml:Operation visibility="protected" name="" xmi:id="N100C6">
+<uml:Parameter type="" name="return" xmi:id="N100C6-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100CA">
+<uml:Parameter type="" name="return" xmi:id="N100CA-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100CE">
+<uml:Parameter type="" name="return" xmi:id="N100CE-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100D2">
+<uml:Parameter type="" name="return" xmi:id="N100D2-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100D6">
+<uml:Parameter type="" name="return" xmi:id="N100D6-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N100DA">
+<uml:Parameter type="" name="return" xmi:id="N100DA-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100DE">
+<uml:Parameter type="" name="return" xmi:id="N100DE-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N100E2">
+<uml:Parameter type="" name="return" xmi:id="N100E2-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100E6">
+<uml:Parameter type="" name="return" xmi:id="N100E6-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100EA">
+<uml:Parameter type="" name="return" xmi:id="N100EA-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100EE">
+<uml:Parameter type="" name="return" xmi:id="N100EE-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100F2">
+<uml:Parameter type="" name="return" xmi:id="N100F2-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N100F6">
+<uml:Parameter type="" name="return" xmi:id="N100F6-return"/>
+</uml:Operation>
+<uml:Generalization specific="DiagramPanel" general="" xmi:id="N100FB"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N100FE">
+<uml:Property type="" visibility="private static final" name="" xmi:id="N10101"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10105"/>
+<uml:Operation visibility="private" name="" xmi:id="N1010A">
+<uml:Parameter type="" name="return" xmi:id="N1010A-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N1010E">
+<uml:Parameter type="" name="return" xmi:id="N1010E-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N10112">
+<uml:Parameter type="" name="return" xmi:id="N10112-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N10116">
+<uml:Parameter type="" name="return" xmi:id="N10116-return"/>
+</uml:Operation>
+<uml:Operation visibility="private static" name="" xmi:id="N1011A">
+<uml:Parameter type="" name="return" xmi:id="N1011A-return"/>
+</uml:Operation>
+<uml:Operation visibility="public static" name="" xmi:id="N1011E">
+<uml:Parameter type="" name="return" xmi:id="N1011E-return"/>
+</uml:Operation>
+<uml:Generalization specific="UMLViewer" general="" xmi:id="N10123"/>
+</uml:Class>
+</uml:Package>
+<uml:Package name="" xmi:id="N10126">
+<uml:Class name="" xmi:id="N10128">
+<uml:Property type="" visibility="private" name="" xmi:id="N1012B"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N1012F"/>
+<uml:Operation visibility="public" name="" xmi:id="N10134">
+<uml:Parameter type="" name="return" xmi:id="N10134-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10138">
+<uml:Parameter type="" name="return" xmi:id="N10138-return"/>
+</uml:Operation>
+<uml:Generalization specific="Adresse" general="" xmi:id="N1013D"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N10140">
+<uml:Property type="" visibility="private" name="" xmi:id="N10143"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10147"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N1014B"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N1014F"/>
+<uml:Operation visibility="private" name="" xmi:id="N10154">
+<uml:Parameter type="" name="return" xmi:id="N10154-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10158">
+<uml:Parameter type="" name="return" xmi:id="N10158-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1015C">
+<uml:Parameter type="" name="return" xmi:id="N1015C-return"/>
+</uml:Operation>
+<uml:Generalization specific="Author" general="" xmi:id="N10161"/>
+<uml:Association xmi:id="N10164">
+<uml:ownedEnd type="Author" xmi:id="N10164-end1"/>
+<uml:ownedEnd type="" xmi:id="N10164-end2"/>
+</uml:Association>
+<uml:Association aggregation="composite" xmi:id="N10167">
+<uml:ownedEnd type="Author" xmi:id="N10167-end1"/>
+<uml:ownedEnd type="" xmi:id="N10167-end2"/>
+</uml:Association>
+</uml:Class>
+<uml:Class name="" xmi:id="N1016A">
+<uml:Property type="" visibility="private" name="" xmi:id="N1016D"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10171"/>
+<uml:Operation visibility="public" name="" xmi:id="N10176">
+<uml:Parameter type="" name="return" xmi:id="N10176-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1017A">
+<uml:Parameter type="" name="return" xmi:id="N1017A-return"/>
+</uml:Operation>
+<uml:Generalization specific="Bibliotheque" general="" xmi:id="N1017F"/>
+<uml:InterfaceRealization supplier="" client="Bibliotheque" xmi:id="N10182"/>
+<uml:Association aggregation="composite" xmi:id="N10185">
+<uml:ownedEnd type="Bibliotheque" xmi:id="N10185-end1"/>
+<uml:ownedEnd type="" xmi:id="N10185-end2"/>
+</uml:Association>
+</uml:Class>
+<uml:Class name="" xmi:id="N10188">
+<uml:Property type="" visibility="private" name="" xmi:id="N1018B"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N1018F"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10193"/>
+<uml:Operation visibility="public" name="" xmi:id="N10198">
+<uml:Parameter type="" name="return" xmi:id="N10198-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1019C">
+<uml:Parameter type="" name="return" xmi:id="N1019C-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101A0">
+<uml:Parameter type="" name="return" xmi:id="N101A0-return"/>
+</uml:Operation>
+<uml:Generalization specific="Book" general="" xmi:id="N101A5"/>
+<uml:Association xmi:id="N101A8">
+<uml:ownedEnd type="Book" xmi:id="N101A8-end1"/>
+<uml:ownedEnd type="" xmi:id="N101A8-end2"/>
+</uml:Association>
+</uml:Class>
+<uml:Class name="" xmi:id="N101AB">
+<uml:Property type="" visibility="private" name="" xmi:id="N101AE"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N101B2"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N101B6"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N101BA"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N101BE"/>
+<uml:Operation visibility="public" name="" xmi:id="N101C3">
+<uml:Parameter type="" name="return" xmi:id="N101C3-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101C7">
+<uml:Parameter type="" name="return" xmi:id="N101C7-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101CB">
+<uml:Parameter type="" name="return" xmi:id="N101CB-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101CF">
+<uml:Parameter type="" name="return" xmi:id="N101CF-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101D3">
+<uml:Parameter type="" name="return" xmi:id="N101D3-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101D7">
+<uml:Parameter type="" name="return" xmi:id="N101D7-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101DB">
+<uml:Parameter type="" name="return" xmi:id="N101DB-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101DF">
+<uml:Parameter type="" name="return" xmi:id="N101DF-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101E3">
+<uml:Parameter type="" name="return" xmi:id="N101E3-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101E7">
+<uml:Parameter type="" name="return" xmi:id="N101E7-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N101EB">
+<uml:Parameter type="" name="return" xmi:id="N101EB-return"/>
+</uml:Operation>
+<uml:Generalization specific="Personne" general="" xmi:id="N101F0"/>
+</uml:Class>
+<uml:Interface name="" xmi:id="N101F3">
+<uml:Operation visibility="public abstract" name="" xmi:id="N101F6">
+<uml:Parameter type="" name="return" xmi:id="N101F6-return"/>
+</uml:Operation>
+<uml:Generalization specific="" general="" xmi:id="N101FB"/>
+</uml:Interface>
+</uml:Package>
+<uml:Package name="" xmi:id="N101FE">
+<uml:Class name="" xmi:id="N10200">
+<uml:Operation visibility="" name="" xmi:id="N10203">
+<uml:Parameter type="" name="return" xmi:id="N10203-return"/>
+</uml:Operation>
+<uml:Operation visibility="" name="" xmi:id="N10207">
+<uml:Parameter type="" name="return" xmi:id="N10207-return"/>
+</uml:Operation>
+<uml:Operation visibility="" name="" xmi:id="N1020B">
+<uml:Parameter type="" name="return" xmi:id="N1020B-return"/>
+</uml:Operation>
+<uml:Operation visibility="public static" name="" xmi:id="N1020F">
+<uml:Parameter type="" name="return" xmi:id="N1020F-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N10213">
+<uml:Parameter type="" name="return" xmi:id="N10213-return"/>
+</uml:Operation>
+<uml:Generalization specific="Examples" general="" xmi:id="N10218"/>
+</uml:Class>
+</uml:Package>
+<uml:Package name="" xmi:id="N1021B">
+<uml:Class name="" xmi:id="N1021D">
+<uml:Operation visibility="public static" name="" xmi:id="N10220">
+<uml:Parameter type="" name="return" xmi:id="N10220-return"/>
+</uml:Operation>
+<uml:Generalization specific="Test" general="" xmi:id="N10225"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N10228">
+<uml:Operation visibility="public static" name="" xmi:id="N1022B">
+<uml:Parameter type="" name="return" xmi:id="N1022B-return"/>
+</uml:Operation>
+<uml:Generalization specific="Test2" general="" xmi:id="N10230"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N10233">
+<uml:Operation visibility="public static" name="" xmi:id="N10236">
+<uml:Parameter type="" name="return" xmi:id="N10236-return"/>
+</uml:Operation>
+<uml:Generalization specific="Test3" general="" xmi:id="N1023B"/>
+</uml:Class>
+</uml:Package>
+<uml:Package name="" xmi:id="N1023E">
+<uml:Interface name="" xmi:id="N10240">
+<uml:Operation visibility="public abstract" name="" xmi:id="N10243">
+<uml:Parameter type="" name="return" xmi:id="N10243-return"/>
+</uml:Operation>
+<uml:Generalization specific="" general="" xmi:id="N10248"/>
+<uml:InterfaceRealization supplier="" client="" xmi:id="N1024B"/>
+</uml:Interface>
+<uml:Interface name="" xmi:id="N1024E">
+<uml:Operation visibility="public abstract" name="" xmi:id="N10251">
+<uml:Parameter type="" name="return" xmi:id="N10251-return"/>
+</uml:Operation>
+<uml:Operation visibility="public abstract" name="" xmi:id="N10255">
+<uml:Parameter type="" name="return" xmi:id="N10255-return"/>
+</uml:Operation>
+<uml:Generalization specific="" general="" xmi:id="N1025A"/>
+<uml:InterfaceRealization supplier="" client="" xmi:id="N1025D"/>
+</uml:Interface>
+</uml:Package>
+<uml:Package name="" xmi:id="N10260">
+<uml:Class name="" xmi:id="N10262">
+<uml:Property type="" visibility="static" name="" xmi:id="N10265"/>
+<uml:Property type="" visibility="static" name="" xmi:id="N10269"/>
+<uml:Operation visibility="private static" name="" xmi:id="N1026E">
+<uml:Parameter type="" name="return" xmi:id="N1026E-return"/>
+</uml:Operation>
+<uml:Operation visibility="public static" name="" xmi:id="N10272">
+<uml:Parameter type="" name="return" xmi:id="N10272-return"/>
+</uml:Operation>
+<uml:Generalization specific="XMLGenerator" general="" xmi:id="N10277"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N1027A">
+<uml:Property type="" visibility="private" name="" xmi:id="N1027D"/>
+<uml:Property type="" visibility="private" name="" xmi:id="N10281"/>
+<uml:Operation visibility="public" name="" xmi:id="N10286">
+<uml:Parameter type="" name="return" xmi:id="N10286-return"/>
+</uml:Operation>
+<uml:Operation visibility="private" name="" xmi:id="N1028A">
+<uml:Parameter type="" name="return" xmi:id="N1028A-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1028E">
+<uml:Parameter type="" name="return" xmi:id="N1028E-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10292">
+<uml:Parameter type="" name="return" xmi:id="N10292-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N10296">
+<uml:Parameter type="" name="return" xmi:id="N10296-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1029A">
+<uml:Parameter type="" name="return" xmi:id="N1029A-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N1029E">
+<uml:Parameter type="" name="return" xmi:id="N1029E-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N102A2">
+<uml:Parameter type="" name="return" xmi:id="N102A2-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N102A6">
+<uml:Parameter type="" name="return" xmi:id="N102A6-return"/>
+</uml:Operation>
+<uml:Operation visibility="public" name="" xmi:id="N102AA">
+<uml:Parameter type="" name="return" xmi:id="N102AA-return"/>
+</uml:Operation>
+<uml:Generalization specific="XMLNode" general="" xmi:id="N102AF"/>
+</uml:Class>
+<uml:Class name="" xmi:id="N102B2">
+<uml:Operation visibility="public" name="" xmi:id="N102B5">
+<uml:Parameter type="" name="return" xmi:id="N102B5-return"/>
+</uml:Operation>
+<uml:Generalization specific="XMLParser" general="" xmi:id="N102BA"/>
+</uml:Class>
+</uml:Package>
+</uml:Model>
+</xmi:XMI>
