@@ -25,7 +25,7 @@ import org.mql.java.xml.XMLParser;
 
 public class Examples extends JFrame{
 	public Examples() {
-		exp01();
+		exp03();
 	}
 	
 	 void exp01() {
@@ -79,7 +79,7 @@ public class Examples extends JFrame{
 		 }
 	 }
 
-	 private String getGenericType(Field field) {
+	 private String getGenericType(Field field) { //Diagram UML
 		    if (field.getGenericType() instanceof ParameterizedType) {
 		        ParameterizedType genericType = (ParameterizedType) field.getGenericType();
 		        java.lang.reflect.Type[] typeArguments = genericType.getActualTypeArguments();

@@ -43,7 +43,7 @@ public class PackagesExplorer extends ClassLoader{
             Class<?> loadedClass = urlClassLoader.loadClass(className);
             classe = loadedClass;
         } catch (ClassNotFoundException e) {
-            System.out.println("Classe non trouvée : " + className);
+        	e.getMessage();
         }
 		
 		return classe;
